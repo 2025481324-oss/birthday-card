@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Love ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="wrapper">
+        <!-- Interactive Letter Envelope -->
+        <div class="envelope-container" id="envelopeContainer" onclick="openCard()">
+            <div class="envelope">
+                <div class="flap"></div>
+                <div class="letter-tab">
+                    <span>💌 Tap to Open</span>
+                </div>
+                <div class="pocket"></div>
+            </div>
+            <p class="click-hint">Click the envelope to read your letter</p>
+        </div>
+
+        <!-- Birthday Card -->
+        <article class="birthday-card hidden" id="birthdayCard">
+            
+            <header class="card-header">
+                <span class="badge">WISH YOU ALL THE BEST!</span>
+                <h1>Happy Birthday, My Love, My Baby,<br>& Half of My Deen ❤️</h1>
+            </header>
+
+            <section class="card-body">
+                <p class="opening">Hi my loveee, my baby... happiest birthday to you!</p>
+                
+                <p>I know this wish is coming a little later than planned, tapi bukannya ayang lupa, ayang cuma nak semuanya perfect for my baby. Because you deserve nothing less than perfection.</p>
+                
+                <p>Ayang nak baby tau, ayang sayang baby sangat-sangat. I am so ridiculously proud of you, for being who you are, for your strength, and for being right here beside me. It’s already been four months with you, and time flies so fast when I’m with the one I love, right?</p>
+                
+                <p>Semoga hari ini, esok, dan seterusnya, Allah sentiasa memudahkan segala urusan baby, memberi kekuatan untuk kita terus melangkah walau kadang rasa penat atau kosong, dan mengurniakan hati yang tenang walau diuji dengan pelbagai dugaan. Semoga setiap doa yang pernah terucap, yang halus mahupun yang tersimpan di dasar hati—Allah makbulkan pada waktu yang paling indah.</p>
+                
+                <p class="signature">I love you endlessly, my baby. Thank you for making my life so much brighter. 💕✨</p>
+            </section>
+
+            <!-- Spotify Player Section (Updated Track) -->
+            <section class="music-card">
+                <div class="music-header">
+                    <span class="music-icon">🎵</span>
+                    <div>
+                        <h3>The songs remind me of you</h3>
+                    </div>
+                </div>
+                
+                <blockquote class="song-quote">
+                    "Kau sentiasa membuatkan seluruh duniaku menjadi lebih terang, jauh lebih berseri daripada segala cahaya di luar sana. Apabila kau merasa sunyi, dengarlah lagu ini sekali lagi dan ingatlah bahawa aku sentiasa ada bersama dirimu, dalam setiap getaran suaraku, degupan jantungku."
+                </blockquote>
+
+                <div class="spotify-embed">
+                    <iframe 
+                        style="border-radius:12px" 
+                        src="https://open.spotify.com/embed/track/0FxTehUyzBC0cVGt3Fd0NJ?utm_source=generator&theme=0" 
+                        width="100%" 
+                        height="152" 
+                        frameBorder="0" 
+                        allowfullscreen="" 
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </section>
+
+            <!-- Romantic Quotes List -->
+            <section class="quotes-list">
+                <span class="chip">I see you and I’m proud of you baby</span>
+                <span class="chip">I’m hopelessly in love with you</span>
+                <span class="chip">You are the love of my life</span>
+                <span class="chip">I love you so much babyy</span>
+                <span class="chip">I never knew loving someone was so easy until I found you</span>
+            </section>
+
+            <footer class="card-footer">
+                <p>Sungguh, aku tak tahu apa yang telah kau lakukan pada hatiku hingga aku merinduimu sebegini rupa. Namun satu perkara yang pasti, jarak ini hanyalah sementara, dan cintaku padamu tidak akan pernah berganjak.</p>
+            </footer>
+
+        </article>
+    </main>
+
+    <script>
+        function openCard() {
+            const envelope = document.getElementById('envelopeContainer');
+            const card = document.getElementById('birthdayCard');
+            
+            envelope.classList.add('open');
+            
+            setTimeout(() => {
+                envelope.style.display = 'none';
+                card.classList.remove('hidden');
+            }, 600);
+        }
+    </script>
+</body>
+</html>
